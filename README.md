@@ -8,9 +8,9 @@
 
 ```bash
 cd ~/workspace
-git clone http://github.com/wbotelhos/sublime-text
-cd sublime-text
-./install.sh
+git clone http://github.com/wbotelhos/fluxbox
+cd fluxbox
+cp -r ./fluxbox/* ~/.fluxbox
 ```
 
 ## Contributors
