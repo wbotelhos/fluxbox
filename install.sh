@@ -45,7 +45,9 @@ begin() {
 clean() {
   sudo apt-get remove gnome-screensaver
   sudo apt-get purge gnome-screensaver
+  sudo killall gnome-screensaver
 }
+
 install() {
   # clean
   rm -rf $FLUXBOX_PATH
