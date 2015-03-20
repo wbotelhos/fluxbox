@@ -42,6 +42,10 @@ begin() {
   echo -e "${GRAY}Starting ${JOB_NAME}...${NO_COLOR}\n"
 }
 
+clean() {
+  sudo apt-get remove gnome-screensaver
+  sudo apt-get purge gnome-screensaver
+}
 install() {
   # clean
   rm -rf $FLUXBOX_PATH
@@ -66,6 +70,7 @@ version() {
 
 begin
 
+clean
 install
 
 end
